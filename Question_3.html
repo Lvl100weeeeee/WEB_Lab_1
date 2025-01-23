@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu with Dropdowns</title>
+    <style>
+        body {
+            background-color: #343736;
+        }
+        nav {
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu > li {
+            position: relative;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .menu > li:hover {
+            background-color: #343736;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: rgb(61, 61, 61);
+            color: gray;
+            min-width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .dropdown li {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+     
+
+        .menu > li:hover .dropdown {
+            display: block;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .dropdown .nested-dropdown {
+            position: absolute;
+            background-color: rgb(97, 95, 95);
+            
+            display: none;
+            border-radius: 5px;
+        }
+
+        .dropdown li:hover .nested-dropdown {
+            display: block;
+        }
+
+       
+
+        .mega-menu div {
+            float: left;
+            width: 33%;
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li>Home</li>
+            <li>
+                About
+                <ul class="dropdown">
+                    <li>Our Team</li>
+                    <li>Mission</li>
+                    <li>
+                        History
+                        <ul class="nested-dropdown">
+                            <li>Early Days</li>
+                            <li>Modern Era</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Services
+                
+            </li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
