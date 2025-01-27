@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+         
+        }
+        .button {
+            background-color: #ffffff; 
+            border: 1px solid rgb(39, 80, 88);
+            color: rgb(39, 80, 88);
+            max-height: 55px;
+            max-width: 75px;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: rgba(61, 75, 78, 0.275);
+          
+        }
+        .custInfo {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin-left: 20px;
+            
+        }
+        .custInfo2{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;    
+            
+            }
+       body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+       form {
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+       }
+       label {
+            font-size: 12;
+       }
+       .button2{
+        background-color: rgb(49, 102, 112);
+        max-height: 20px;
+        max-width: fit-content;
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-top: 2px;
+        font-weight: bold;
+        font-size: small;
+        margin: 5px;
+        margin-top: 0px;
+       }
+      .button2:hover{
+        background-color: rgb(39, 80, 88);
+        }
+        .goldcash{
+            margin-left: 50px;
+            margin-top: 30px ;
+            padding-top: 20px;
+            padding-left: 30px;
+            background-color: rgb(39, 80, 88);
+            min-width: 180px;
+            min-height: 80px;
+            max-height: 80px;
+            color: white;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button">
+            <img src="reference_Images\button1_Q6.png" style="border-radius: 100%;">
+            <p>Top</p>
+        </div>
+        <div class="button">
+            <img src="reference_Images\button2_Q6.png">
+            <p>Prev</p>
+        </div>
+        <div class="button">
+            <img src="reference_Images\button2_Q6.png" style="transform: scaleX(-1)">
+            <p>Next</p>
+        </div>
+        <div class="button">
+            <img src="reference_Images\button1_Q6.png" style="border-radius: 100%;transform: rotate(180deg);">
+            <p>Bottom</p>
+        </div>
+        <div class="button">
+            <img src="reference_Images\button5_Q6.png" style="border-radius: 100%; max-width: 35px;">
+            <p>Search</p>
+        </div>
+        <div class="button">
+            <img src="reference_Images\button6_Q6.png" style="max-width: 37px;">
+            <p>Delete</p>
+        </div>
+        <div class="button">
+            <img src="reference_Images\button7_Q6.png" style="max-width: 30px;">
+            <p>Save</p>
+        </div>
+        <div class="button">
+            <img src="reference_Images\button8_Q6.png" style="max-width: 36px;">
+            <p>Edit</p>
+        </div>
+        <div class="button">
+            <img src="reference_Images\button9_Q6.png" style="max-width: 37px;">
+            <p>New</p>
+        </div>
+        <div class="button" style="background-color: rgb(39, 80, 88);">
+            <p style="font-weight: bold; color:#ffffff ;">Bill Reference</p>
+        </div>
+        <div class="button">
+            <img src="reference_Images\button9_Q6.png" style="max-width: 37px;">
+            <p>Exit</p>
+        </div>
+        <div class="button" style="min-width: 150px;max-height: 50px;border: 4px solid rgb(39, 80, 88);"></div>
+    </div> 
+   
+    <div class="custInfo" style="color: rgb(49, 102, 112);">
+        <h3>CUSTOMER INFORMATION</h3>
+        </div>
+        <div class="custInfo2">
+          <div>
+        <form >
+            <div>
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" style="margin-left: 88px;margin-bottom: 5px;">
+            <br>
+            <label>Party Name:</label>
+            <input type="text" name="Party Name" id="pName" style="margin-left: 37px;margin-bottom: 5px;">
+            <br>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date" style="margin-left: 76px;min-width: 170px;margin-bottom: 5px;">
+            <br>
+            <label>Gold Type</label>
+            <select name="cars" id="cars" style="margin-left: 48px;min-width: 168px;margin-bottom: 5px;">
+                <option value="Tezaabi">Tezaabi</option>
+                <option value="Jewelery">Jewelery</option>
+            </select>
+            <br>
+            <label for="Gold Receive" style="margin-top: 20px;">Gold Receive:</label>
+            <input type="text" id="Gold Receive" name="Gold Receive" style="margin-left: 29px;margin-bottom: 5px;">
+        </div>
+        </form>
+
+        </div>
+        <div class="custInfo2" style="margin-left: 10px; margin-top: 108px;">
+           
+            <div class="button2">Convert to Tezaabi</div>
+            <div class="button2">Convert to Price</div>
+            
+        </div>
+        <div class="goldcash">
+            gold<br><br>cash
+        </div>
+        <div class="button" style="max-width: fit-content;max-height: fit-content;">
+            Send
+        </div>
+   </div>
+</body>
+</html>
